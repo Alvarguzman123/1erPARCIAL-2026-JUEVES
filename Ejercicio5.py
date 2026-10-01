@@ -37,8 +37,15 @@ class ProductoKwikE:
         return f"producto: {self.descripcion}, ID: {self.id_producto}, Precio: {self.precio}, Stock: {self.stock}"
 
 
-    def __eq__(self, ):
-        return
+    def __eq__(self, otro):
+        if self.id_producto != otro.id_producto:
+            return False
+
+        if self.descripcion!= otro.descripcion:
+            return False
+            
+        return True
+        
 
 
 

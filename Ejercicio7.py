@@ -37,11 +37,23 @@ class KwikEMart:
     def remover_expirar(self, fecha_actual):
         cantidad=0
 
-        for producto in self.sectorBebidas[]:
+        for producto in self.sectorBebidas[:]:
             dias_restantes = (producto.fecha_vencimiento - fecha_actual).days
             if dias_restantes <= 1:
                 self.sectorBebidas.remove(producto)
                 cantidad += 1
+        for producto in self.sectorSnacks[:]:
+            dias_restantes = (producto.fecha_vencimiento - fecha_actual).days
+            if dias_restantes <= 1:
+                self.sectorSnacks.remove(producto)
+                cantidad += 1
+        for producto in self.sectorConveniencia[:]:
+            dias_restantes = (producto.fecha_vencimiento - fecha_actual).days
+            if dias_restantes <= 1:
+                self.sectorConveniencia.remove(producto)
+                cantidad += 1
+        return cantidad
+        
     
 
     

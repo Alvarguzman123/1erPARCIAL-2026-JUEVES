@@ -1,3 +1,3 @@
 n=5
 
-secuencia_donas = {n:2**((n-1)/2)} for n in range (1,N+1)
+secuencia_donas = {i: 2**((i-1)/2) for i in range (1,n+1)}

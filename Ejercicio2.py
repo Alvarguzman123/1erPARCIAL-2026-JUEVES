@@ -1,4 +1,4 @@
-def contar_donas(donas,personas):
+def contar_donas(donas: int,personas: int):
     contador=0
 
     for i in range (personas):
