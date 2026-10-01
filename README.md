@@ -88,8 +88,8 @@ La clase debe contener métodos para facilitar:
 ---
 Nombre y Apellido: Alvar Guzman
 
-Email:
+Email: alvarguzman@gmail.com
 
-Comisión:
+Comisión: 2
 
 ---
